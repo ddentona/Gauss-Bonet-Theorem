@@ -1,13 +1,50 @@
 \documentclass{article}
+\usepackage{amsmath}
+\usepackage{cjhebrew}
+\usepackage[LGR,T1]{fontenc}
+\newcommand{\donaldiv}{\textgreek{Ντόναλντ Δ }}
+\newcommand{\textgreek}[1]{\begingroup\fontencoding{LGR}\selectfont#1\endgroup}\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Example~\theexample. #1} \rmfamily}{\medskip}
 
 \title{Gauss-Bonet Theorem}
-\author{Think the Duck}
+\author{\textgreek{Για Ντόναλντ Ιορδανιδου Δ}}
 \begin{document}
 \maketitle
 
-The Gauss-Bonnet Theorem is a formula linking linking the curvature of a surface to its topology.
+The Gauss-Bonnet Theorem is a formula linking the curvature of a surface to its topology.
 \begin{equation}
     \int_M K\,dA + \int_{\partial M} k_g \,ds = 2\pi\chi(M)
 \end{equation}
+
+\section{Descriptions}
+There are a few functions within the theorem that would require descriptions unto themselves.
+In this section, they will be explained.
+
+\subsection{Euler's Characteristic}
+It wouldn't be math if Euler wasn't hiding in there somewhere (\<'wyy>). 
+Euler's characteristic, represented as a function with $\chi(M)$, is a function that tracks the number of objects of each dimension. 
+A \donaldiv description of this would be, for $k_i$ being the number of $i-dimensional$ components of the overall object:
+\begin{equation}
+    \chi(M) = \overunderset{\infty}{i = 0}{\Sigma} k_i (-1)^i 
+\end{equation}
+
+\begin{example}\\
+    $\chi(line) = 2 - 1 = 1$\\
+    $\chi(5\ point\ star) = 10 - 10 + 2 = 2$\\
+    $\chi(dodecahedron) = 20 - 30 + 12 = 2$\\
+    $\chi(tesseract) = 16 - 32 + 18 - 2 = 0$
+\end{example}
+
+\section{Related Theorems}
+\subsection{Theoreme de Descartes}
+René n'était pas un philosopheur. 
+Il était un mathématicien qui a appliqué les règles des preuves de mathématiques à des règles qu'il s'est inventé.
+``Je pense donc je suis'' n'était pas une conclusion, c'était un postulat q'il s'est donné.
+Qui autre d'un mathématicien pourrait nous donner le plan cartésien. 
+
+% https://e.math.cornell.edu/people/belk/differentialgeometry/Outline\%20-\%20The\%20Gauss\%20Map.pdf
+% https://en.wikipedia.org/wiki/Descartes\%27_theorem
+% https://www2.math.upenn.edu/~shiydong/Math501X-7-GaussBonnet.pdf
 
 \end{document}
