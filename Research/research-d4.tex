@@ -21,6 +21,38 @@ The Gauss-Bonnet Theorem is a formula linking the curvature of a surface to its 
 There are a few functions within the theorem that would require descriptions unto themselves.
 In this section, they will be explained.
 
+\subsection{Curvature}
+Curvature is often represented by the greek letter $\kappa$.
+There are multiple formulae that would be equivalent to $\kappa$.
+\begin{gather}
+    \kappa  =   \left|\left|\frac{d\vec{T}}{ds}\right|\right|
+        =   \frac{\left|\left|\vec{T}'(t)\right|\right|}{\left|\left|\vec{r}\ '(t)\right|\right|}
+        =   \frac{\left|\left|\vec{r}\ '(t) \times \vec{r}\ ''(t)\right|\right|}{\left|\left|\vec{r}\ '(t)\right|\right|^3}
+\end{gather}
+
+\begin{example}
+    The case of a sphere.\\
+    A sphere has an equation for it. 
+    \[
+        x^2 + y^2 + z^2 = r^2
+    \]
+
+    This can be rewritten to form a formula of $r$.
+    \[
+        r(t) = \sqrt{x(t)^2 + y(t)^2 + z(t)^2}
+    \]
+
+    We can rewrite this in polar coordinates.
+    \begin{align*}
+        x(t)    &=  r*\sin(\theta)\cos(\phi)\\
+        y(t)    &=  r*\sin(\theta)\sin(\phi)\\
+        z(t)    &=  r*\cos(\theta)
+    \end{align*}
+    % \begin{align*}
+    %     \kappa
+    % \end{align*}
+\end{example}
+
 \subsection{Euler's Characteristic}
 It wouldn't be math if Euler wasn't hiding in there somewhere (\<'wyy>). 
 Euler's characteristic, represented as a function with $\chi(M)$, is a function that tracks the number of objects of each dimension. 
@@ -43,6 +75,8 @@ René n'était pas un philosopheur.
 Il était un mathématicien qui a appliqué les règles des preuves de mathématiques à des règles qu'il s'est inventé.
 ``Je pense donc je suis'' n'était pas une conclusion, c'était un postulat q'il s'est donné.
 Qui autre d'un mathématicien pourrait nous donner le plan cartésien. 
+
+\section{}
 
 % Bibliography
 % https://e.math.cornell.edu/people/belk/differentialgeometry/Outline\%20-\%20The\%20Gauss\%20Map.pdf
